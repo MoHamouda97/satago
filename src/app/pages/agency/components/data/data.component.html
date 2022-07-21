@@ -1,0 +1,199 @@
+<div class="container">
+    <form>
+        <div class="row">
+          <div class="col-12">            
+            <p-checkbox label="Active" value="active"></p-checkbox>
+          </div>            
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">Agency Manager</h5>
+                <p-dropdown [options]="[]" optionLabel="name" styleClass="w-100"></p-dropdown>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">External Id</h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Business name
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Invoice name
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Address
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Postel code
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    City
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Province
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Region
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Country
+                    <span class="required"></span>
+                </h5>
+                <p-dropdown [options]="[]" optionLabel="country" styleClass="w-100"></p-dropdown>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Document number
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Phone number
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Whatsapp number
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Contact person name
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Contact person last name
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Email
+                    <span class="required"></span>
+                </h5>
+                <input type="email" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Billing emails
+                    <span class="required"></span>
+                </h5>
+                <input type="email" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Managment group
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>  
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Taxes
+                    <span class="required"></span>
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Invoice type
+                    <span class="required"></span>
+                </h5>
+                <p-radioButton name="invType" value="0" label="NET" labelStyleClass="mr-15 bold"></p-radioButton>
+                <p-radioButton name="invType" value="1" label="COMMISION" labelStyleClass="bold"></p-radioButton>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Remarks
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+        </div>  
+        
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <p-checkbox label="Cancelation policy" value="0"></p-checkbox>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Cancelation policy
+                    <span class="pi pi-lock"></span>
+                </h5>
+                <p-inputNumber></p-inputNumber>
+            </div>
+        </div>
+
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    GDS Identifier (only Galileo)
+                </h5>
+                <input type="text" class="w-100" pInputText />
+            </div>
+            <div class="col-4">
+                <h5 class="mb-5 bold">
+                    Minimum first payment
+                    <span class="pi pi-lock"></span>
+                </h5>
+                <p-dropdown [options]="[]" optionLabel="name" styleClass="w-100"></p-dropdown>
+            </div>
+        </div> 
+        
+        <div class="row mt-30 align">
+            <div class="col-4">
+                <p-checkbox label="Credit/Deposit payment allowed" value="0"></p-checkbox>
+            </div>
+        </div>        
+    </form>
+</div>

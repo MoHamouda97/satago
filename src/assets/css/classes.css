@@ -1,0 +1,44 @@
+/* start spaces */
+.mt-20{
+    margin-top: 20px !important;
+}
+
+.mt-30{
+    margin-top: 30px !important;
+}
+
+.mb-5{
+    margin-bottom: 5px !important;
+}
+
+.mr-15{
+    margin-right: 15px !important;
+}
+/* end spaces */
+
+/* start typography */
+.bold{
+    font-weight: bold;
+}
+/* end typography */
+
+/* start form control */
+.align{
+    align-items: center !important;
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.required{
+    position: relative;
+}
+
+.required::before {
+    content: '*';
+    position: absolute;
+    left: 5px;
+    color: #e93030;
+}
+/* end form control */

@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row p-gutter">
+        <div class="col-md-12">
+            <button pButton type="button" class="p-button-info mr-2">Create</button>
+            <p-splitButton 
+                label="Export" 
+                styleClass="p-button-outlined p-button-info mr-2" 
+                [model]="items"></p-splitButton>
+            <button 
+                pButton 
+                type="button"
+                label="Columns" 
+                class="p-button-outlined p-button-info" 
+                icon="pi pi-align-justify" 
+                iconPos="right"></button>
+        </div>
+    </div>
+
+    <div class="row p-gutter">
+        <div class="col-md-12">
+            <p-table [value]="agencies" >
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Options</th>
+                        <th pSortableColumn="agency">Manager <p-sortIcon field="agency"></p-sortIcon></th>
+                        <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
+                        <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                        <th pSortableColumn="email">email <p-sortIcon field="email"></p-sortIcon></th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                    </tr>
+                    <tr>
+                        <th></th>     
+                        <th>
+                            <p-columnFilter type="text" field="agency"></p-columnFilter>
+                        </th>
+                        <th>
+                            <p-columnFilter type="text" field="id"></p-columnFilter>
+                        </th>       
+                        <th>
+                            <p-columnFilter type="text" field="name"></p-columnFilter>
+                        </th>
+                        <th>
+                            <p-columnFilter type="text" field="email"></p-columnFilter>
+                        </th>
+                        <th>
+                            <p-columnFilter type="text" field="phone"></p-columnFilter>
+                        </th>
+                        <th></th>      
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-agency>
+                    <tr>
+                        <td>
+                            <p-splitButton 
+                                label="Options" 
+                                styleClass="p-button-info" 
+                                [model]="options"></p-splitButton>                
+                        </td>
+                        <td>{{agency.agency}}</td>
+                        <td>{{agency.id}}</td>
+                        <td>{{agency.name}}</td>
+                        <td>{{agency.email}}</td>
+                        <td>{{agency.phone}}</td>
+                        <td>{{agency.address}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>
